@@ -9,3 +9,6 @@ I use [GNOME subtitles](http://www.gnomesubtitles.org/), but the software isn't 
 
 # Languages
 Feel free to add any language you want, but I can't guarantee quality for languages other than English.
+
+# How to add subtitles to downloaded videos
+You need to have [`ffmpeg`](https://ffmpeg.org/) installed. Just execute `ffmpeg -i "video.mkv" -i "subtitle.srt" -vcodec copy -acodec copy "video (sub).mkv"`, where `video.mkv` is the file you downloaded and `subtitle.srt` is the file you created.
